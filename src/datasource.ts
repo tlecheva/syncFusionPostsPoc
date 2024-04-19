@@ -585,7 +585,14 @@ export let summaryRowData: Object[] = [
     Title: 'Post 3: Title',
     Username: 'Aeon Jones',
     Date: '20/04/25 09:00',
-
+    Content: `<ul>
+        <li>
+          <p>Provides &lt; IFRAME&gt; and &lt; DIV &gt; modes </p>
+        </li>
+        <li>
+          <p>Capable of handling markdown editing.</p>
+        </li>
+      </ul>`,
     Rating: 3,
     TotalUnits: 172,
     TotalCosts: 24,
