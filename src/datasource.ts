@@ -596,7 +596,7 @@ export let summaryRowData: Object[] = [
         Title: 'Check all',
         Username: 'Aniseed Syrup',
         TotalUnits: 89,
-        Rating: 1,
+        Rating: 3,
         Date: '18/04/25 15:00',
         TotalCosts: 590,
         UnitWeight: 87,

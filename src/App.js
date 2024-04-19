@@ -29,6 +29,7 @@ import {
 
 import * as React from 'react';
 import { summaryRowData } from './datasource.ts';
+import './index.css';
 registerLicense(
   process.env.REACT_APP_SYNCFUSION_LICENSE,
   // Thomas Lechevalier personnal & private Community license
@@ -86,7 +87,7 @@ function App() {
   function rating(props) {
     return (
       <span>
-        <RatingComponent value={props.Rating} itemsCount={3} />
+        <RatingComponent className="star" value={props.Rating} itemsCount={3} />
       </span>
     );
   }
