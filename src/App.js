@@ -31,8 +31,9 @@ import * as React from 'react';
 import { summaryRowData } from './datasource.ts';
 import './index.css';
 registerLicense(
+  // create a .env file and add the license key inside it 
+  // REACT_APP_SYNCFUSION_LICENSE='your_license_key_here'
   process.env.REACT_APP_SYNCFUSION_LICENSE,
-  // Thomas Lechevalier personnal & private Community license
 );
 import { registerLicense } from "@syncfusion/ej2-base";
 import AggregateGroup from './aggregateGroup.js';
@@ -105,7 +106,7 @@ function App() {
 
   return (
     <span style={{ margin: '2% 5%', position: 'absolute' }}>
-      <RichPostContent Content="<p><h2>Airbus Atlantic</h2> UX _ Desing in Progress _ for <b>Posts</b> and comments</p>" />
+      <RichPostContent Content="<p><h2>E2EMod</h2> UX _ Desing in Progress _ for <b>Posts</b> and comments</p>" />
       <TreeGridComponent
         dataSource={summaryRowData}
         treeColumnIndex={0}
