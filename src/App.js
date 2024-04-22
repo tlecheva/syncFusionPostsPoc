@@ -88,7 +88,7 @@ function App() {
   function rating(props) {
     return (
       <span>
-        <RatingComponent className="star" value={props.Rating} itemsCount={3} />
+        <RatingComponent value={props.Rating} itemsCount={3} cssClass='custom-fill' />
       </span>
     );
   }

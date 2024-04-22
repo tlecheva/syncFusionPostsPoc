@@ -1,4 +1,10 @@
 /* css */
-.star {
-    font-size: smaller;
+
+.e-rating-container.custom-fill .e-rating-item-list:hover .e-rating-item-container .e-rating-icon,
+.e-rating-container.custom-fill .e-rating-item-container .e-rating-icon {
+    /* To change rated symbol fill color and un-rated symbol fill color */
+    background: linear-gradient(to right, black var(--rating-value), #d8d7d4 var(--rating-value));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px black;
 }
