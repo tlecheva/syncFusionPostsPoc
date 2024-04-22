@@ -8,3 +8,14 @@
     -webkit-background-clip: text;
     -webkit-text-stroke: 1px black;
 }
+
+.e-treegrid.my-treegrid .e-headercell {
+    background-color: #003152;
+    color: #ffffff;
+    /* Bleu foncé */
+}
+
+.e-treegrid .e-row:nth-child(odd) {
+    background-color: #c8e1f5;
+    /* Bleu clair plus clair */
+}

@@ -38,7 +38,9 @@ registerLicense(
 import { registerLicense } from "@syncfusion/ej2-base";
 import AggregateGroup from './aggregateGroup.js';
 
-function RichPostContent({ Content }) {
+function RichPostContent(props) {
+  const { Content } = props
+  console.log("🚀 ~ RichPostContent ~ props:", props)
   let inlineMode = {
     enable: true,
     onSelection: true,
@@ -71,6 +73,7 @@ function RichPostContent({ Content }) {
       value={Content}
       inlineMode={inlineMode}
       toolbarSettings={toolbarSettings}
+    // className="my-richtexteditor"
     >
       <Inject services={[Toolbar, Image, Link, HtmlEditor, QuickToolbar]} />
     </RichTextEditorComponent>
@@ -116,12 +119,12 @@ function App() {
         allowResizing={true}
         dataBound={dataBound}
         ref={(g) => (treegrid = g)}
-        // ref={treeGrid}
         allowTextWrap={true}
         allowFiltering={true}
         allowSorting={true}
         showColumnMenu={true}
         filterSettings={filterSettings}
+        className="my-treegrid"
       >
         <ColumnsDirective>
           <ColumnDirective field="Title" headerText="Post" textAlign="Left" width="120" />
@@ -130,7 +133,7 @@ function App() {
             headerText="Username"
             width="130"
           />
-          <ColumnDirective field="Date" headerText="Date" width="80" />
+          <ColumnDirective field="Date" headerText="Date" width="90" />
           <ColumnDirective
             field="Content"
             headerText="Content"
