@@ -597,7 +597,6 @@ export let summaryRowData: Object[] = [
     TotalUnits: 172,
     TotalCosts: 24,
     UnitWeight: 296,
-
     children: [
       {
         Title: 'Check all',
@@ -610,8 +609,10 @@ export let summaryRowData: Object[] = [
       },
       {
         Title: 'UF1290LK',
-        Username: 'The Green Microgym',
+        Username: 'Martin Lutherking',
         TotalUnits: 56,
+        Content: `<p>Previous comments only contains a Rating!</p>`,
+        Date: '18/04/25 16:00',
         Rating: 3,
         TotalCosts: 876,
         UnitWeight: 90,

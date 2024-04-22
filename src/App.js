@@ -96,9 +96,11 @@ function App() {
   let treegrid;
   const dataBound = () => {
     if (treegrid) {
-      // treegrid.autoFitColumns(['Title']);
-      treegrid.autoFitColumns(['Title', 'Username', 'Date',]);
+
+      treegrid.autoFitColumns(['Title', 'Username']);
       treegrid.collapseAll();
+      const lastRow = treegrid.getRows()[6];
+      treegrid.expandRow(lastRow);
     }
   };
 
@@ -114,6 +116,7 @@ function App() {
         allowResizing={true}
         dataBound={dataBound}
         ref={(g) => (treegrid = g)}
+        // ref={treeGrid}
         allowTextWrap={true}
         allowFiltering={true}
         allowSorting={true}
@@ -127,7 +130,7 @@ function App() {
             headerText="Username"
             width="130"
           />
-          <ColumnDirective field="Date" headerText="Date" width="90" />
+          <ColumnDirective field="Date" headerText="Date" width="80" />
           <ColumnDirective
             field="Content"
             headerText="Content"
